@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TIy-kA-EPj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Page View Controller-->
+        <scene sceneID="aN1-k3-ohR">
+            <objects>
+                <pageViewController storyboardIdentifier="Welcome" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="TIy-kA-EPj" customClass="MainPageViewController" customModule="FruitApp" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rze-3I-0Dy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2055" y="-156"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="hyL-kN-UWA">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MainVC" storyboardName="Main" id="cto-lM-4dC" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="bjz-yZ-SOU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qHF-K5-0Xj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="993" y="-156"/>
+        </scene>
+        <!--First Step View Controller-->
+        <scene sceneID="1Hp-85-wsK">
+            <objects>
+                <viewController storyboardIdentifier="FirstStepVC" id="zlQ-XD-SQF" customClass="FirstStepViewController" customModule="FruitApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QV7-VH-jZa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uT-sw-cYZ">
+                                <rect key="frame" x="183.5" y="433" width="47" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWL-hl-lMj">
+                                <rect key="frame" x="20" y="782" width="374" height="60"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="KhU-8z-meE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButtonTapped:" destination="zlQ-XD-SQF" eventType="touchUpInside" id="f9V-Zo-TwG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aLh-cF-4Ab"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4uT-sw-cYZ" firstAttribute="centerX" secondItem="QV7-VH-jZa" secondAttribute="centerX" id="4Wy-pD-jal"/>
+                            <constraint firstItem="aLh-cF-4Ab" firstAttribute="bottom" secondItem="LWL-hl-lMj" secondAttribute="bottom" constant="20" id="MjU-aF-w7U"/>
+                            <constraint firstItem="LWL-hl-lMj" firstAttribute="centerX" secondItem="QV7-VH-jZa" secondAttribute="centerX" id="ULS-Jv-xA8"/>
+                            <constraint firstItem="LWL-hl-lMj" firstAttribute="leading" secondItem="aLh-cF-4Ab" secondAttribute="leading" constant="20" id="Zd5-ee-dnb"/>
+                            <constraint firstItem="4uT-sw-cYZ" firstAttribute="centerY" secondItem="QV7-VH-jZa" secondAttribute="centerY" id="d8v-4n-e6M"/>
+                            <constraint firstItem="aLh-cF-4Ab" firstAttribute="trailing" secondItem="LWL-hl-lMj" secondAttribute="trailing" constant="20" id="dEW-Xn-zC2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZdS-HZ-NYn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1268" y="-156"/>
+        </scene>
+        <!--Second Step View Controller-->
+        <scene sceneID="Jhx-c9-qRG">
+            <objects>
+                <viewController storyboardIdentifier="SecondStepVC" id="Dvv-TP-pFR" customClass="SecondStepViewController" customModule="FruitApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nll-BT-2N5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgL-oL-Dzn">
+                                <rect key="frame" x="165.5" y="433" width="83" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nK-Dm-Tqi">
+                                <rect key="frame" x="20" y="782" width="374" height="60"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="OAS-zI-ObF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionButtonTapped:" destination="Dvv-TP-pFR" eventType="touchUpInside" id="e1c-2n-YcY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="trG-0b-HRd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cgL-oL-Dzn" firstAttribute="centerY" secondItem="nll-BT-2N5" secondAttribute="centerY" id="DxT-tG-xmP"/>
+                            <constraint firstItem="trG-0b-HRd" firstAttribute="trailing" secondItem="5nK-Dm-Tqi" secondAttribute="trailing" constant="20" id="JGJ-8f-Wm5"/>
+                            <constraint firstItem="cgL-oL-Dzn" firstAttribute="centerX" secondItem="nll-BT-2N5" secondAttribute="centerX" id="WgJ-rF-dFw"/>
+                            <constraint firstItem="trG-0b-HRd" firstAttribute="bottom" secondItem="5nK-Dm-Tqi" secondAttribute="bottom" constant="20" id="ahs-Rh-Cf0"/>
+                            <constraint firstItem="5nK-Dm-Tqi" firstAttribute="leading" secondItem="trG-0b-HRd" secondAttribute="leading" constant="20" id="csd-AU-BCv"/>
+                            <constraint firstItem="5nK-Dm-Tqi" firstAttribute="centerX" secondItem="nll-BT-2N5" secondAttribute="centerX" id="yt3-Ha-kQ0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QUF-14-ife" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-474" y="-156"/>
+        </scene>
+        <!--Third Step View Controller-->
+        <scene sceneID="2rB-Oa-OGg">
+            <objects>
+                <viewController storyboardIdentifier="ThirdStepVC" id="mPY-jZ-nE7" customClass="ThirdStepViewController" customModule="FruitApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QLx-VC-vi5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Third" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGf-EP-9tI">
+                                <rect key="frame" x="179" y="433" width="56" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pk9-9L-Nhe">
+                                <rect key="frame" x="20" y="782" width="374" height="60"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="dFt-Cb-u9d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cto-lM-4dC" kind="presentation" modalPresentationStyle="fullScreen" id="K9H-J7-DmW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cno-RL-uU0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wGf-EP-9tI" firstAttribute="centerY" secondItem="QLx-VC-vi5" secondAttribute="centerY" id="1Ap-fv-gLi"/>
+                            <constraint firstItem="wGf-EP-9tI" firstAttribute="centerX" secondItem="QLx-VC-vi5" secondAttribute="centerX" id="OjU-nB-eKe"/>
+                            <constraint firstItem="pk9-9L-Nhe" firstAttribute="centerX" secondItem="QLx-VC-vi5" secondAttribute="centerX" id="PTv-ZR-S42"/>
+                            <constraint firstItem="cno-RL-uU0" firstAttribute="trailing" secondItem="pk9-9L-Nhe" secondAttribute="trailing" constant="20" id="VL5-oW-81D"/>
+                            <constraint firstItem="cno-RL-uU0" firstAttribute="bottom" secondItem="pk9-9L-Nhe" secondAttribute="bottom" constant="20" id="jZV-VA-8O4"/>
+                            <constraint firstItem="pk9-9L-Nhe" firstAttribute="leading" secondItem="cno-RL-uU0" secondAttribute="leading" constant="20" id="xDW-yN-olG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mRZ-pT-yB9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="357" y="-156"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
